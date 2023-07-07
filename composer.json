@@ -1,0 +1,24 @@
+{
+    "name": "effectra/cache",
+    "description": "The Effectra Cache package.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Effectra\\Cache\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammed Taha",
+            "email": "info@mohammedtaha.net"
+        }
+    ],
+    "require": {
+        "php": "7.2",
+        "psr/simple-cache": "^3.0",
+        "psr/cache": "*",
+        "predis/predis": "*"
+    },
+    "minimum-stability": "stable"
+}
