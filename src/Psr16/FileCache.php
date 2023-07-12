@@ -23,7 +23,7 @@ class FileCache implements CacheInterface
     /**
      * {@inheritdoc}
      */
-    public function get($key, $default = null)
+    public function get(string $key, $default = null):mixed
     {
         $this->validateKey($key);
 
@@ -46,7 +46,7 @@ class FileCache implements CacheInterface
     /**
      * {@inheritdoc}
      */
-    public function set($key, $value, $ttl = null): bool
+    public function set(string $key, $value, $ttl = null): bool
     {
         $this->validateKey($key);
 

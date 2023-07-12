@@ -2,17 +2,18 @@
 
 namespace Effectra\Cache\Psr16;
 
+use Predis\Client;
 use Psr\SimpleCache\CacheInterface;
 use Predis\ClientInterface;
 use Predis\Response\Status;
 
 class RedisCache implements CacheInterface
 {
-    private $redis;
+    private ClientInterface $redis;
 
-    public function __construct(ClientInterface $redis)
+    public function __construct( )
     {
-        $this->redis = $redis;
+        $this->redis = new Client();
     }
 
     public function get($key, $default = null)
