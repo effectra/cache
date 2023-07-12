@@ -15,7 +15,6 @@
         }
     ],
     "require": {
-        "php": "^7.2",
         "psr/simple-cache": "^3.0",
         "psr/cache": "*",
         "predis/predis": "*"
